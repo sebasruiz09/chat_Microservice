@@ -1,0 +1,11 @@
+﻿<div class="row">
+    <div class="col-mdcol-8 offset-2">
+        <h2>sala de chat</h2>
+        <ul class="list-group">
+            @foreach ( var e in chat_microservices.Controllers.ChatController.Rooms)
+           {
+               <li class="list-group-item"><a href="~/Chat/Room?room=@e.Key">@e.Value</a></li>
+           }
+        </ul>
+    </div>
+</div>
